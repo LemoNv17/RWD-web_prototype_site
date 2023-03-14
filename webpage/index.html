@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style/reset.css"/>
+    <link rel="stylesheet" href="./style/1-Mobile.css"/>
+    <link rel="stylesheet" href="./style/2-Tablet.css"/>
+    <link rel="stylesheet" href="./style/3-Desktop.css"/>
+
 </head>
 <body>
-    
+    <main>
+        <header class="header">
+            <div class="header__tab-bar">
+                <div class="header__tab-bar__logo">
+                    <img class="header__tab-bar__logo-img" src="../images/logo.png"/>
+                </div>
+                <label for="toggle" class="header__tab-bar__hamburger"></label>
+                    <input type="checkbox" id="toggle" class="header__tab-bar__input-hidden">
+                    <div class="header__tab-bar--background-menu"></div>
+                        <nav class="header__tab-bar__menu">
+                            <ul>
+                                <li class="header__tab-bar__item">Home</li>
+                                <li class="header__tab-bar__item">Features</li>
+                                <li class="header__tab-bar__item">Pricing</li>
+                                <li class="header__tab-bar__item">Blog</li>
+                                <li class="header__tab-bar__item">Pages</li>
+                                <li class="header__tab-bar__item">Contact</li>
+                            </ul>
+                        </nav>
+            </div>
+            <section class="header__content">
+
+            </section>
+            
+        </header>
+    </main>
 </body>
 </html>
