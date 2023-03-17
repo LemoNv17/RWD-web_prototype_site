@@ -1,1 +1,273 @@
-/* 900px */
+/* 600px */
+
+@media (min-width:600px) {
+
+    /* Header */
+
+    .header{
+        display: grid;
+
+        grid-template-areas: 
+        "g-header__action g-header__phone"
+        ;
+        grid-template-columns: 2fr;
+        background-size: 110% 70%;
+        background-position: top;
+        
+    }
+    .header__tab-bar__item{
+        font-size: 1.4rem;
+    }
+
+    .header__content{
+        grid-area: g-header__action;
+    }
+
+    .header__phone-img{
+        grid-area: g-header__phone;
+        position: relative;
+        top:5rem;
+        left:2rem;
+        transform: scale(80%);
+    }
+    .header__content{
+        margin-top: 11rem;
+        margin-left: 4rem;
+        
+    }
+    .header__content__title{
+        font-size: 1.6rem;
+        width: 110%;
+    }
+    .header__content__under-title{
+        font-size: 1rem;
+        width: 110%;
+    }
+    .header__content__button{
+        transform: scale(105%);
+        margin-left: 1.2rem;
+    }
+
+    /* Header end */
+
+    /* Features */
+
+    .features{
+        margin-top: -10%;
+    
+    }
+    .features__example{
+        display: flex;
+
+    }
+    .features__title{
+        font-size: 1.6rem;
+        width: 35%;
+        margin: 2rem auto;
+    }
+    .features__example__item-b,
+    .features__example__item-g,
+    .features__example__item-o{
+        position: relative;
+        left:5%;
+    }
+    .features__example__description{
+        width: 50%;
+        position: relative;
+        left:5%;
+        line-height: 140%;
+    }
+    .features__example__description-left{
+        left:38%;
+    }
+    .features__example__description-right{
+       left: -30%;
+    }
+    .features__example__item-b{
+        left:40%;
+    }
+    .features__example__item-g{
+        left: -30%;
+    }
+
+    /* Features download */
+
+    .features__download-section{
+        display: flex;
+    }
+    .features__download-section-description{
+      width: 42%;
+      margin-left:8%;
+      text-align: left;
+      
+    }
+    .features__download-section__description{
+        text-align: left;
+        font-size: 1.1rem;
+        width: 110%;
+    }
+    .features__download-section-photo{
+        width: 48%;
+        margin-right: 8%;
+        margin-top:4rem;
+    }
+    .features__download-section__title{
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        margin-top:4rem;
+    }
+    .features__download-section__cta-button{
+        width: 25%;
+        margin-left:10%;
+    }
+    
+    
+    .features__download-section__img{
+        transform: scale(70%);
+    }
+
+    /* Features download end */
+
+    /* Features end */
+
+    /* Comments */
+
+    .comments--background{
+        margin-top:0;
+    }
+
+    .comments__content{
+        margin-top:-15%;
+    }
+
+    .comments__content__title{
+        font-size: 1.7rem;
+        width: 30%;
+    }
+    .comments__content__description{
+        font-size: 1.1rem;
+        width: 70%;
+    }
+
+    /* Comments end */
+
+    /* Ofert */
+
+    .ofert__title{
+        margin-top:4rem;
+        font-size: 1.8rem;
+    }
+
+    .ofert__description{
+        font: 1.1rem;
+        width:65%;
+        margin:1rem auto;
+    }
+    .ofert__cta-button{
+        transform: scale(110%);
+        transition-duration: 0.2s;
+    }
+
+    /* FLEX */
+    .ofert--block{
+        width: 20%;
+        
+        position: absolute;
+    }
+    .ofert__flex{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
+        margin-top:2rem;
+        transform: scale(90%);
+        
+    }
+    
+    .ofert__basic{
+        position: relative;
+        left:20px;
+        width:30%;
+       
+    }
+
+    .ofert__business{
+        position: relative;
+        left:-20px;
+        width: 30%;
+        
+    }
+
+    .ofert__team{
+        position: relative;
+        top: -1.5rem;
+        width: 33%;
+        z-index: 20;
+       
+    }
+   
+    /* Ofert end */
+
+    /* Download-app */
+    .download-app{
+        margin-top:-4rem;
+        height: 400px;
+    }
+    .download--app__title{
+        font-size: 2.5rem;
+        text-align: left;
+        margin-top:15%;
+        margin-left: 10%;
+    }
+    .download--app__img-holder{
+        justify-content: center;
+    }
+
+    .download--app__img-holder__img{
+        margin: 1rem 1rem;
+    }
+
+    /* Download-app end */
+    
+    /* Support */
+
+    .support{
+        height: 650px;
+    }
+    .support__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .support__social,
+    .support__service,
+    .support__useful-links,
+    .support__downloads{
+        flex-basis: 40%;
+        width: 40%; 
+        line-height: 150%;
+    }
+    .support__social,
+    .support__usefull-links{
+        margin-left: 2rem;
+        margin-top: 3.5rem;
+    }
+
+    .support__service,
+    .support__downloads{
+        margin-right:  3rem;
+        margin-top:4rem
+    }
+    
+    /* Support end */
+
+    /* Footer */
+
+    .footer{
+        height: 100px;
+    }
+    .footer__text{
+        margin-top: 5% ;
+    }
+
+    /* Footer end */
+}

@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
+
+    <script src="https://kit.fontawesome.com/95e80d8ce6.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style/reset.css"/>
     <link rel="stylesheet" href="./style/1-Mobile.css"/>
     <link rel="stylesheet" href="./style/2-Tablet.css"/>
@@ -18,30 +20,270 @@
 </head>
 <body>
     <main>
-        <header class="header">
-            <div class="header__tab-bar">
-                <div class="header__tab-bar__logo">
-                    <img class="header__tab-bar__logo-img" src="../images/logo.png"/>
-                </div>
-                <label for="toggle" class="header__tab-bar__hamburger"></label>
-                    <input type="checkbox" id="toggle" class="header__tab-bar__input-hidden">
-                    <div class="header__tab-bar--background-menu"></div>
-                        <nav class="header__tab-bar__menu">
-                            <ul>
-                                <li class="header__tab-bar__item">Home</li>
-                                <li class="header__tab-bar__item">Features</li>
-                                <li class="header__tab-bar__item">Pricing</li>
-                                <li class="header__tab-bar__item">Blog</li>
-                                <li class="header__tab-bar__item">Pages</li>
-                                <li class="header__tab-bar__item">Contact</li>
-                            </ul>
-                        </nav>
-            </div>
-            <section class="header__content">
+        <div class="header-background-desktop">
+            <header class="header" id="home">
+                <div class="header__tab-bar">
+                    <div class="header__tab-bar__logo">
+                        <img class="header__tab-bar__logo-img" src="../images/logo.png"/>
+                    </div>
+                    <nav class="header__tab-bar__menu--desktop">
+                        <ul class="header__tab-bar__menu--desktop-ul">
+                            <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#home" >Home</a></li>
+                            <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#features">Features</a></li>
+                            <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#pricing">Pricing</a></li>
+                            <li class="header__tab-bar__item header__tab-bar__item-blog"><a class="header__tab-bar__item__link " href="#blog">
+                                Blog <i class="fa-solid fa-chevron-down header__tab-bar__item__link__arrow"></i></a>
+                                <ul class="header__tab-bar__item__list-blog__item">
+                                    <li class="header__tab-bar__item__link--list-blog__item">About us</li>
+                                    <li class="header__tab-bar__item__link--list-blog__item">Our history</li>
+                                    <li class="header__tab-bar__item__link--list-blog__item">Future</li>
+                                </ul>
+                            </li>
+                            <li class="header__tab-bar__item header__tab-bar__item-page"><a class="header__tab-bar__item__link " href="#pages">
+                                Pages <i class="fa-solid fa-chevron-down header__tab-bar__item__link__arrow"></i></a>
+                                <ul class="header__tab-bar__item__list-page__item">
+                                    <li class="header__tab-bar__item__link--list-page__item">Support</li>
+                                    <li class="header__tab-bar__item__link--list-page__item"><a class="header__tab-bar__item__link--list-page__item-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="blank">Look at this!</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#pages">Contact</a></li>
+                        </ul>
+                    </nav> 
 
-            </section>
+                    <button class="cta-button--header-desktop">Download</button>
+
+                    <label for="toggle" class="header__tab-bar__hamburger"></label>
+                        <input type="checkbox" id="toggle" class="header__tab-bar__input-hidden"/>
+                            <nav class="header__tab-bar__menu">
+                                <ul>
+                                    <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#home" >Home</a></li>
+                                    <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#features">Features</a></li>
+                                    <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#pricing">Pricing</a></li>
+                                    <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#blog">Blog</a></li>
+                                    <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#pages">Pages</a></li>
+                                    <li class="header__tab-bar__item"><a class="header__tab-bar__item__link" href="#contact">Contact</a></li>
+                                </ul>
+                            </nav> 
+                </div>
+                <div class="header__space"></div>
+                
+                <section class="header__content">
+                    <h1 class="header__content__title">
+                        Promote Your App With Applab
+                    </h1>
+                    <p class="header__content__under-title">
+                        Get more users to promote your app with 
+                        this template
+                    </p>
+                    <button class="header__content__button">Get Start Now</button>
+                </section>
+
+                <section class="header__phone-img">
+                    <img class="header__phone-img__item" src="../images/phone.png"/>
+                </section>
+                <div class="header__back"><a class="header__back__link"href="#home"><i class="fa-solid fa-arrow-up"></i></a></i></div>
+            </header>
+        </div>
+        <section class="features" >
+            <h2 class="features__title">Save your time to using applab</h2>
             
-        </header>
+            <div class="features__example">
+                <div>
+                    <div class="features__example__item-b">
+                        <img class="features__example__item-img" src="../images/icons/2.svg"/>
+                    </div>
+                        <p class="features__example__description features__example__description-left">
+                            Manage team in 
+                            One Place
+                        </p>
+                </div>
+                <div>
+                    <div class="features__example__item-o">
+                        <img class="features__example__item-img" src="../images/icons/1.svg"/>
+                    </div>
+                        <p class="features__example__description">
+                            All-powerful Pointing
+                            has no control
+                        </p>
+                </div>
+                <div>
+                    <div class="features__example__item-g">
+                        <img class="features__example__item-img" src="../images/icons/3.svg"/>
+                    </div>
+                        <p class="features__example__description features__example__description-right">
+                            Establish a solid 
+                            online presence
+                        </p>
+                </div>
+            </div>
+            <article class="features__download-section" id="features">
+                <div class="features__download-section-description">
+                    <h3 class="features__download-section__title">
+                        Features that give you real feel
+                    </h3>
+                    <p class="features__download-section__description">
+                        Lorem Ipsum is simply dummy text of 
+                        the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 
+                        1500s, when an unknown printer took 
+                        a galley of type and scrambled it to 
+                        make a type specimen book.
+                    </p>
+                    <button class="features__download-section__cta-button">Download Now</button>
+                </div>
+                <div class="features__download-section-photo">
+                    <img  class="features__download-section__img" src="../images/draw.png"/>
+                </div>
+            </article>
+        </section>
+
+        <section class="comments">
+            <div class="comments--background">
+                <article class="comments__content">
+                    <h3 class="comments__content__title">
+                        Review from our regular users
+                    </h3>
+                    <p class="comments__content__description">
+                        Lorem Ipsum is simply dummy text of 
+                        the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 
+                        1500s.
+                    </p>
+                    <div class="comments__content__rating">
+                        <i class="fa-solid fa-star comments__content__rating__item"></i>
+                        <i class="fa-solid fa-star comments__content__rating__item"></i>
+                        <i class="fa-solid fa-star comments__content__rating__item"></i>
+                        <i class="fa-solid fa-star comments__content__rating__item"></i>
+                        <i class="fa-solid fa-star comments__content__rating__item"></i>
+                        Robert Smile
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <article class="ofert" id="pricing">
+            <h2 class="ofert__title">
+                Unlock full Power
+            </h2>
+            <p class="ofert__description">
+                Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry.
+            </p>
+            <div class="ofert__flex">
+                <section class="ofert__basic ofert--block">
+                    <h3 class="ofert__title-description">Basic</h3>
+                    <p class="ofert__basic__price">$49</p>
+                    <div style="clear: both;"></div>
+                    <div class="ofert__basic__features">
+
+                        <p class="ofert__features-item">One User</p>
+                        <p class="ofert__features-item">1000 ui elements</p>
+                        <p class="ofert__features-item">Webmail Support</p>
+                        <p class="ofert__features-item">100GB Cloud Storage</p>
+
+                        <button class="ofert__cta-button">Get Now</button>
+                    </div>
+                </section>
+                
+                    <section class="ofert__team ofert--block ofert--block--big">
+                        <h3 class="ofert__title-description">Team</h3>
+                        <p class="ofert__team__price">$79</p>
+                        <div style="clear: both;"></div>
+                        <div class="ofert__team__features">
+
+                            <p class="ofert__features-item">One User</p>
+                            <p class="ofert__features-item">1000 ui elements</p>
+                            <p class="ofert__features-item">Webmail Support</p>
+                            <p class="ofert__features-item">150GB Cloud Storage</p>
+                            <p class="ofert__features-item">Unlimited Users Limit</p>
+
+                            <button class="ofert__cta-button">Get Now</button>
+                        </div>
+                    </section>
+                    <section class="ofert__business ofert--block ofert--block--biger">
+                        <h3 class="ofert__title-description">Business</h3>
+                        <p class="ofert__business__price">$99</p>
+                        <div style="clear: both;"></div>
+                        <div class="ofert__business__features">
+
+                            <p class="ofert__features-item">Business User</p>
+                            <p class="ofert__features-item">1500 ui elements</p>
+                            <p class="ofert__features-item">Webmail Support</p>
+                            <p class="ofert__features-item">300GB Cloud Storage</p>
+                            
+                            
+
+                            <button class="ofert__cta-button">Get Now</button>
+                        </div>
+                    </section>
+            
+            </div>
+        </article>
+
+        <section class="download-app">
+            <h3 class="download--app__title">
+                Get start form now <br/> 
+                and increase productivity
+            </h3>
+            <div class="download--app__img-holder">
+                <img class="download--app__img-holder__img" src="../images/app.svg"/>
+                <img class="download--app__img-holder__img" src="../images/play.svg"/>
+            </div>
+        </section>
+
+        <article class="support" id="pages">
+            <div class="support__flex support--margin">
+                <section class="support__social">
+                <img class="support__logo-img" src="../images/logo.png"/>
+                <p class="support__description">Firmament morning sixth subdue darkness creeping gathered divide.</p>
+                    
+                    <div class="support__socials">
+                        <a href="https://www.facebook.com/dominik.lejman.92" target="blank"><i class="fa-brands fa-square-facebook support__socials__fb"></i></a>
+                        <a><i class="fa-brands fa-square-twitter support__socials__tw"></i></a>
+                        <a href="https://www.instagram.com/do.minek_l/" target="blank"><i class="fa-brands fa-square-instagram support__socials__ig"></i></a>
+                    </div>
+                </section>
+
+                <section class="support__service">
+                    <h3 class="support__title">
+                        Services
+                    </h3>
+                    <p class="support__option">Team management</p>
+                    <p class="support__option">Collaboration</p>
+                    <p class="support__option">Todo</p>
+                    <p class="support__option">Events</p>
+                </section>
+            </div>
+            <div class="support__flex support--margin-minus">
+                <section class="support__usefull-links">
+                    <h3 class="support__title">
+                        Useful Links
+                    </h3>
+                    <p class="support__option">Pricing</p>
+                    <p class="support__option">Features</p>
+                    <p class="support__option">Blog</p>
+                    <p class="support__option">Contact</p>
+                </section>
+                <section class="support__downloads">
+                    <h3 class="support__title support__title--up">
+                        Downloads
+                    </h3>
+                    <p class="support__option">Downloads from Apple Store</p>
+                    <p class="support__option">Downloads from Play Store</p>
+                </section>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <p class="footer__text">
+                Copyright &copy;2023 All rights reserved | 
+                this template is made with <i class="fa-regular fa-heart"></i> by
+                <a class="footer__text__link" href="https://colorlib.com/">Colorlib</a>
+
+            </p>
+        </footer>
     </main>
 </body>
 </html>
